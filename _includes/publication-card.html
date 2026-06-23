@@ -3,7 +3,7 @@
   <div class="paper-box-image">
     <div>
       {% if paper.badge %}<div class="badge">{{ paper.badge }}</div>{% endif %}
-      <img src="{{ paper.image | relative_url }}" alt="{{ paper.alt | default: paper.title | escape }}" width="100%">
+      <img src="{{ paper.image | relative_url }}" alt="{{ paper.alt | default: paper.title | escape }}" width="100%" loading="lazy" decoding="async">
     </div>
   </div>
   <div class="paper-box-text">
