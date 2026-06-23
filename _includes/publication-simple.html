@@ -1,0 +1,6 @@
+{% assign paper = include.paper %}
+<div class="paper-simple">
+  <span class="paper-simple-title">{{ paper.title | escape }}</span><br>
+  <span class="paper-simple-authors">{{ paper.authors }}</span><br>
+  <span class="paper-simple-venue">{{ paper.venue }}</span>
+</div>
